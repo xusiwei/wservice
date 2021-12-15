@@ -89,6 +89,8 @@ public class TianApiClient {
         chineseDate.setLunarMonth(details.getString(ChineseDateKeys.K_LUNAR_MONTH));
         chineseDate.setLunarDay(details.getString(ChineseDateKeys.K_LUNAR_DAY));
         chineseDate.setJieQi(details.getString(ChineseDateKeys.K_JIE_QI));
+        chineseDate.setFitness(details.getString(ChineseDateKeys.K_FITNESS));
+        chineseDate.setTaboo(details.getString(ChineseDateKeys.K_TABOO));
         log.debug(String.format("ChineseDate object parsed %s", chineseDate.toString()));
         return chineseDate;
     }

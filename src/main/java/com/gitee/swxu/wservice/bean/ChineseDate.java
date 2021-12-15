@@ -24,6 +24,26 @@ public class ChineseDate {
     @JsonProperty(ChineseDateKeys.K_JIE_QI)
     private String jieQi;
 
+    private String fitness;
+
+    private String taboo;
+
+    public String getFitness() {
+        return fitness;
+    }
+
+    public void setFitness(String fitness) {
+        this.fitness = fitness;
+    }
+
+    public String getTaboo() {
+        return taboo;
+    }
+
+    public void setTaboo(String taboo) {
+        this.taboo = taboo;
+    }
+
     public String getDate() {
         return date;
     }
@@ -90,6 +110,8 @@ public class ChineseDate {
                 ", lunarMonth='" + lunarMonth + '\'' +
                 ", lunarDay='" + lunarDay + '\'' +
                 ", jieQi='" + jieQi + '\'' +
+                ", fitness='" + fitness + '\'' +
+                ", taboo='" + taboo + '\'' +
                 '}';
     }
 }
