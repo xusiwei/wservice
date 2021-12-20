@@ -84,13 +84,13 @@ public class TianApiClient {
         JSONObject details = newsList.getJSONObject(0);
         chineseDate.setDate(details.getString(ChineseDateKeys.K_GREGORIAN_DATE));
         chineseDate.setLunarDate(details.getString(ChineseDateKeys.K_LUNAR_DATE));
-        chineseDate.setLunarFestival(details.getString(ChineseDateKeys.K_LUNAR_FESTIVAL));
-        chineseDate.setFestival(details.getString(ChineseDateKeys.K_FESTIVAL));
-        chineseDate.setLunarMonth(details.getString(ChineseDateKeys.K_LUNAR_MONTH));
-        chineseDate.setLunarDay(details.getString(ChineseDateKeys.K_LUNAR_DAY));
-        chineseDate.setJieQi(details.getString(ChineseDateKeys.K_JIE_QI));
-        chineseDate.setFitness(details.getString(ChineseDateKeys.K_FITNESS));
-        chineseDate.setTaboo(details.getString(ChineseDateKeys.K_TABOO));
+//        chineseDate.setLunarFestival(details.getString(ChineseDateKeys.K_LUNAR_FESTIVAL));
+//        chineseDate.setFestival(details.getString(ChineseDateKeys.K_FESTIVAL));
+//        chineseDate.setLunarMonth(details.getString(ChineseDateKeys.K_LUNAR_MONTH));
+//        chineseDate.setLunarDay(details.getString(ChineseDateKeys.K_LUNAR_DAY));
+//        chineseDate.setJieQi(details.getString(ChineseDateKeys.K_JIE_QI));
+//        chineseDate.setFitness(details.getString(ChineseDateKeys.K_FITNESS));
+//        chineseDate.setTaboo(details.getString(ChineseDateKeys.K_TABOO));
         log.debug(String.format("ChineseDate object parsed %s", chineseDate.toString()));
         return chineseDate;
     }
